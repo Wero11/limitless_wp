@@ -1,0 +1,47 @@
+/* CSS Document */
+
+/*
+
+Widget styling for Hades PLus framework 
+
+== Index ==============================
+---------------------------------------
+
+1. Wordpress Native Widgets Styling for Sidebar .
+2. Wordpress Native Widgets Styling for Footer .
+
+=======================================
+
+*/
+
+@import "values";
+
+@mixin default_button($padding,$font_size)
+{
+  outline: none;
+    border:none; 
+    border-radius:2px; 
+    background: $palette_color_2; color:#fff; 
+    padding:$padding; 
+    font-size:$font_size; 
+    font-weight:700; 
+    display: inline-block; text-decoration: none;
+	
+	-webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+  transition-property: background,color;
+  transition-duration: 200ms, 200ms;
+  transition-delay: 0s;
+
+}
+
+@mixin default_button_hover($padding,$font_size)
+{
+
+    background:none; 
+   
+    background: $palette_color_1; color:#fff; 
+   
+
+}
+

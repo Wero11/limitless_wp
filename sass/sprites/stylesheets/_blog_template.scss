@@ -1,0 +1,637 @@
+@import "values";
+@import "mixins";
+
+div.ioa-menu { margin-top: 30px;  position: relative; width: 94px;  float: right; z-index:10;  }
+div.ioa-menu >span { float: left; z-index:2; line-height: 1.9; font-size: 12px; color:#fff;  background:$palette_color_2;  padding:10px 0px; width: 54px; text-align: center; font-weight: 600; }
+
+div.ioa-menu a { display: block;  float: left;  background:#3f8faa; text-align: center; padding:12px 12px; font-size: 18px; color:#fff; text-decoration: none;  }
+
+div.ioa-menu ul { display: none; box-shadow:0px 22px 20px rgba(0,0,0,0.4); border-left:3px solid $palette_color_2; background:#3f8faa; margin: 0; padding: 0; position: absolute; top:42px; right:0; width: 150px; }
+div.ioa-menu ul li span { position: relative; z-index:10; display: block; }
+div.ioa-menu ul li { cursor: pointer; position: relative; list-style:none; padding:11px 0; margin:0; text-align: center; color:#fff; font-size: 11px; font-weight: 600; }
+div.ioa-menu ul li div.hoverdir-wrap { overflow:hidden; position: absolute; top:0; left:0; width: 100%; height:100%; }
+div.ioa-menu ul li div.hoverdir-wrap span.hoverdir {  background:$palette_color_2; height:100%; display: block; position: absolute; width:100%; z-index:1; top:0; left:-150px; }
+div.ioa-menu ul li.active { background :$palette_color_2;  } 
+
+/**
+ * Menu Version 2
+ */
+
+div.ioa-menu-open { margin-top: 30px;  position: relative; width: auto;  float: right; z-index:10;  }
+div.ioa-menu-open ul { display: block; box-shadow:0px 0px 10px rgba(0,0,0,0.15) inset; border-left:none; background:#3f8faa; margin: 0; padding: 0; position: relative; top:auto; right:0; width: auto; }
+div.ioa-menu-open ul li span { position: relative; z-index:10; display: block; }
+div.ioa-menu-open ul li { cursor: pointer; position: relative; list-style:none; padding:11px 19px;text-align: center; color:#fff; font-size: 11px; font-weight: 600; float: left; }
+div.ioa-menu-open ul li div.hoverdir-wrap { overflow:hidden; position: absolute; top:0; left:0; width: 100%; height:100%; }
+div.ioa-menu-open ul li div.hoverdir-wrap span.hoverdir {  background:$palette_color_2; height:100%; display: block; position: absolute; width:100%; z-index:1; top:0; left:-150px; }
+div.ioa-menu-open ul li.active { background :$palette_color_2;  } 
+
+/**
+ * Pagination
+ */
+
+div.pagination_wrap  {  padding:0;  }
+
+div.pagination { float: left; padding: 15px 0; }
+div.pagination ul { margin:0; padding:15px 0; }
+div.pagination ul li, .page-numbers { float: left; list-style:none; padding:0; margin:0px 2px 0px 0px; }
+div.pagination ul li a ,  .pagination_wrap a.page-numbers  { border-radius:2px;  color:$palette_color_4;  background:$palette_color_2; text-decoration: none; font-weight: 600; font-size: 11px; display: block;
+ padding:7px 14px; 
+ 	-webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; 
+  transition-property:background;
+  transition-duration: 200ms, 200ms;
+  transition-delay: 0s; color:#fff;
+}
+div.pagination ul li a:hover {  background:$palette_color_3; }
+
+div.pagination ul li span.current, .pagination_wrap span.page-numbers  { background: $palette_color_1; color:#fff; border-radius:3px; font-weight: 600; font-size: 12px; display: block; padding:6px 14px 6px 14px; }
+div.pagination ul li span.gap {  color:#444;  font-weight: 600; font-size: 12px; display: block; padding:12px 12px; }
+
+div.pagination-dropdown { float: right;  padding: 30px 0; }
+div.pagination-dropdown span { font-size: 11px; font-style: italic; font-weight: 100;  float: left; margin:11px 5px 0 0 ; }
+
+div.pagination-dropdown div.select-wrap i { position: absolute; top:3px; right:0; color:$palette_color_2; font-size: 18px; display: block; padding:5px 7px; } 
+div.pagination-dropdown div.select-wrap  {
+ height: 21px;
+ margin: 0;
+ overflow: hidden;
+ padding: 5px 0;
+ position: relative;
+ width: 54px;
+ z-index: 1;
+ float: left;
+ border:2px solid $palette_color_2;
+ border-radius:4px; padding-top: 8px;
+}
+
+div.pagination-dropdown div.select-wrap  select {
+ -webkit-appearance: none;
+ background: transparent!important;
+ border: none;
+ color: #888;
+ cursor: pointer;
+ display: block;
+ font-size: 13px;
+ margin: 0!important;
+ outline: none;
+ outline: none;
+ padding: 0px 0px 10px 10px;
+ width: 83px;
+ height: 25px; font-weight: 600;
+ position: relative; z-index:2;
+}
+
+.blog_posts ul li.format-gallery div.gallery { position: relative; }
+/**
+ * Blog Template Format 1
+ */
+
+div.blog-format1-posts ul {  margin: 0; padding: 0 ; overflow:visible!important   }
+div.blog-format1-posts ul li { list-style:none;  margin: 0; padding:30px 0; position: relative; width: 100%; min-height:30px; }
+
+div.blog-format1-posts ul li.no-posts-found { background:#e36804; text-align: center; color:#fff; margin:30px 0 30px 0; font-weight:700; }
+
+div.blog-format1-posts div.datearea { z-index:12; overflow:hidden;  position: absolute; top:30px ; left:0px; width:77px; -webkit-font-smoothing: antialiased; padding:0 0 0; background:#fafafa;  }
+div.blog-format1-posts small.date {  color:#464646; line-height:36px; padding:15px 0; letter-spacing: -3px; font-size:36px;  display: block; text-align: center; }
+div.blog-format1-posts small.month { background:rgba(0,0,0,0.08); color:#888; padding: 5px; text-transform: uppercase; font-size:13px; font-weight: 700; display: block; text-align: center; }
+div.blog-format1-posts ul li.format-gallery i.icon-camera-retro { position: absolute; background:$palette_color_2; color:#fff; border-radius:100%; padding:12px 13px; top:10px; left:-10px; z-index:15; }
+
+div.blog-format1-posts ul li.format-gallery>div.gallery { margin:0px 10px 10px 110px; } 
+div.blog-format1-posts ul li.format-gallery br {  display: none; }
+div.blog-format1-posts ul li.format-gallery dl.gallery-item {float: left;margin: 0 ;padding: 0; width: 25%; }
+div.blog-format1-posts ul li.format-gallery dl.gallery-item a , div.blog-format1-posts ul li.format-gallery dl.gallery-item img { display: block; width:100%; }
+div.blog-format1-posts ul li.format-gallery div.desc a.read-more { margin-top:30px; }
+
+div.blog-format1-posts ul li.format-gallery .gallery-caption { display: none; }
+
+div.blog-format1-posts ul li.format-gallery div.desc h2 { margin-top: 20px; }
+
+div.blog-format1-posts ul li.format-link div.desc  { position: relative; max-width:90%; text-align: center; margin:0 0 0 110px; font-size: 24px;  padding: 25px; }
+div.blog-format1-posts ul li.format-link i { position: absolute; background:$palette_color_2; color:#fff; border-radius:100%; padding:12px 13px; top:10px; left:-10px; z-index:15; }
+div.blog-format1-posts ul li.format-link a {  border-bottom:1px dotted #222; text-decoration: none; color:#111;  display: inline; text-align: center;   font-size:24px;font-weight: 100;} 
+
+div.blog-format1-posts ul li.format-video div.desc { max-width: 100%; margin-left: 110px;  margin-top: 0; }
+div.blog-format1-posts ul li.format-video div.desc p { display: block; }
+div.blog-format1-posts ul li.format-video iframe { margin:10px auto; }
+div.blog-format1-posts ul li.format-video  i { position: absolute; background:$palette_color_2; color:#fff; border-radius:100%; padding:12px 13px; top:10px; left:-10px; z-index:15; }
+
+
+div.blog-format1-posts ul li.format-audio div.desc { max-width: 100%; margin-left: 110px;  margin-top: 0; padding:30px 0; position: relative; }
+div.blog-format1-posts ul li.format-audio  i { position: absolute; background:$palette_color_2; color:#fff; border-radius:100%; padding:12px 13px; top:10px; left:-10px; z-index:15; }
+
+div.blog-format1-posts ul li.format-status div.desc { max-width: 100%; margin-left: 110px;  margin-top: 0; padding: 15px; }
+div.blog-format1-posts ul li.format-status div.desc h2 { padding-bottom: 15px; margin-top: 15px;}
+div.blog-format1-posts ul li.format-status  i { position: absolute; background:$palette_color_2; color:#fff; border-radius:100%; padding:12px 13px; top:10px; left:-10px; z-index:15; }
+
+
+div.blog-format1-posts ul li.format-quote div.desc { max-width: 100%; margin-left: 110px;  margin-top: 0;  }
+div.blog-format1-posts ul li.format-quote div.quote {  text-align: center; padding:20px; border:1px solid #f4f4f4;  }
+div.blog-format1-posts ul li.format-quote div.quote  { font-size:21px; font-style: italic; font-family: "Droid Serif",Georgia,Arial; font-weight: 100;  }
+div.blog-format1-posts ul li.format-quote div.quote .quote-caption { float: right; margin-bottom: 0; color:#888; }
+div.blog-format1-posts ul li.format-quote  i { position: absolute; background:$palette_color_2; color:#fff; border-radius:100%; padding:12px 13px; top:10px; left:-10px; z-index:10; }
+
+div.blog-format1-posts ul li.format-chat div.desc { max-width: 100%; margin-left: 110px;  margin-top: 0; border:1px solid #f4f4f4; padding:30px; position: relative; }
+div.blog-format1-posts ul li.format-chat i.icon-comments-alt { position: absolute; background:$palette_color_2; color:#fff; border-radius:100%; padding:12px 13px; top:10px; left:-10px; z-index:14; }
+
+div.blog-format1-posts ul li.format-chat i.icon-caret-down {  position: absolute; bottom:-23px; left:10px; font-size: 36px; color:$palette_color_2;  }
+div.blog-format1-posts ul li.format-chat img.avatar { margin-left: 110px; margin-top: 14px; border:1px solid #eee; padding:4px; }
+
+div.blog-format1-posts ul li.format-status div.desc { max-width: 100%; margin-left: 110px;  margin-top: 0; text-align: center; border:1px solid #eee;  }
+.sticky-icon { position: absolute; background:$palette_color_2; color:#fff; border-radius:100%; padding:11px 14px; top:10px; left:-10px; z-index:10; }
+
+div.blog-format1-posts ul li div.video { max-width: 100%; z-index:2;  margin-bottom:20px; margin-top: 0; padding:0; position: relative; }
+
+div.proxy-datearea {  overflow:hidden; height:0; 	color:#fff; position: absolute; top:0px ; left:0px; width:77px; padding:0; background:$palette_color_1;  }
+
+div.proxy-datearea small.date {  color:inherit;}
+div.proxy-datearea  small.month {  color:inherit;}
+
+div.blog-format1-posts span.line {  z-index:1;  position: absolute; top:100px ; left:40px; width:1px; height:3px; border-left:1px solid #eee; border-left:1px solid rgba(0,0,0,0.08); }
+div.blog-format1-posts ul li div.ioaslider { margin-bottom: 25px; position: relative; z-index:2; }
+div.blog-format1-posts ul li div.image-wrap { position: relative; z-index:2;  margin-bottom:0px; background:url(sprites/i/shadows/sh_type1.png) bottom left no-repeat; padding-bottom: 32px;}
+div.blog-format1-posts ul li div.image { position: relative; background:#f8f8f8; overflow:hidden;    } 
+div.blog-format1-posts ul li div.image a.imageholder , div.blog-format1-posts ul li div.image a.imageholder img { display: block; max-width: 100%; margin:0 auto;  }
+div.blog-format1-posts ul li .hover { z-index:1; background:$palette_color_2; display: none;  position: absolute;top:0; left:0; width: 100%; height:100%; bottom:28px;  }
+div.blog-format1-posts ul li div.image a.imageholder img { margin:0 auto; max-width:100%; height:auto; }
+div.blog-format1-posts ul li .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:$palette_color_2; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.blog-format1-posts ul li .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:$palette_color_2; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+div.blog-format1-posts ul li.format-image div.image .wp-caption-text { text-align: center; font-size: 13px; margin-top: 10px; }
+div.blog-format1-posts ul li.format-image div.image-wrap { float: none; width: 100%;  background:none; padding-bottom: 0; }
+div.blog-format1-posts ul li.format-image div.image-wrap div.image { background:none;  }
+div.blog-format1-posts ul li.format-image div.image-wrap img { display: block; margin:0 auto; }
+div.blog-format1-posts ul li.format-image div.desc  { max-width: 100%; width:auto; float: none;  margin-top: 0; }
+div.blog-format1-posts ul li.format-image div.desc h2 { margin-bottom: 20px; }
+div.blog-format1-posts ul li.format-image .wp-caption {  }
+
+div.blog-format1-posts ul li div.desc { max-width:70%; margin:0px auto 2px auto; }
+div.blog-format1-posts ul li div.desc div.excerpt { margin-top:15px; margin-bottom: 10px;  word-wrap:break-word; line-height:1.5; font-weight: 100; }
+div.blog-format1-posts ul li div.desc h2 { margin-bottom: 0; line-height:1;  font-size: 15px;  }
+div.blog-format1-posts ul li div.desc h2 a {  font-weight:700;  word-wrap:break-word; text-decoration: none; color:#666; }
+div.blog-format1-posts ul li div.extra { font-size: 11px; color:#888; font-weight: 100; margin-bottom: 15px; margin-top:15px; border-top:1px solid #f4f4f4; border-bottom:1px solid #f4f4f4; }
+div.blog-format1-posts ul li div.extra a { text-decoration: none; color:#666; font-style: italic; display: inline-block; margin-right: 4px; }
+div.blog-format1-posts ul li div.extra a:hover { text-decoration: underline; }
+div.blog-format1-posts ul li div.desc a.read-more  {  @include default_button(5px 16px 5px 16px,12px); margin-top: 10px; }
+div.blog-format1-posts ul li div.desc a.read-more:hover  {  @include default_button_hover(5px 16px 5px 16px,12px);  }
+/**
+ * Blog Template Format 2
+ */
+
+div.blog-format2-posts ul {  margin: 0; padding: 0 0 0 0px;  }
+div.blog-format2-posts ul li { list-style:none;  margin:30px 0 0 0; padding:0px 0 0px 0; position: relative;  }
+div.blog-format2-posts ul li.no-posts-found {  padding: 15px; background:#e36804; text-align: center; color:#fff; margin:30px 0; font-weight:700; }
+
+div.blog-format2-posts ul li div.video { margin: 0; }
+
+div.blog-format2-posts ul li div.ioa-gallery ,div.blog-format2-posts ul li div.ioaslider , div.blog-format2-posts ul li div.video { margin-right:30px; float: left; width:320px; margin-bottom: 0px; padding-bottom:0;}
+div.blog-format2-posts ul li div.image-wrap { margin-right:30px; float: left; width:320px; margin-bottom: 0px; background:url(sprites/i/shadows/sh_type1.png) bottom left no-repeat; padding-bottom: 32px;}
+div.blog-format2-posts ul li div.image { position: relative; background:#eee; overflow:hidden;   } 
+div.blog-format2-posts ul li div.image a.imageholder , div.blog-format2-posts ul li div.image a.imageholder img { display: block;  }
+div.blog-format2-posts ul li div.image a.imageholder img { margin:0 auto; max-width:100%; height:auto; }
+div.blog-format2-posts ul li .hover i  { display: none; box-shadow:0px 0px 3px rgba(0,0,0,0.2);   }
+div.blog-format2-posts ul li .hover { z-index:1; background:$palette_color_2; display: none;  position: absolute;top:0; left:0; width: 100%; height:100%; bottom:28px;  }
+
+div.blog-format2-posts ul li .hover i.hover-lightbox { position: absolute; top:38%; left:43%; background:#fff; font-size: 18px; color:$palette_color_2; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+div.blog-format2-posts ul li div.desc div.excerpt {  word-wrap:break-word; margin-top: 15px; margin-bottom: 15px; line-height:1.5; font-weight: 100; }
+div.blog-format2-posts ul li div.desc {  margin:0px auto 2px auto;  float: left; width:390px; }
+
+.full-width-layout div.blog-format2-posts ul li div.desc { width: 710px; }
+
+div.blog-format2-posts ul li h2 { margin: 0 0 15px 0; line-height:1;  font-size: 16px; }
+div.blog-format2-posts ul li h2 a { font-size: 16px;  word-wrap:break-word; text-decoration: none; color:#555; }
+div.blog-format2-posts ul li div.extra { font-size: 11px; color:#888; font-weight: 100; margin-bottom: 15px; margin-top:10px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; }
+div.blog-format2-posts ul li div.extra a { text-decoration: none; color:#666; font-style: italic; display: inline-block; margin-right: 4px; }
+div.blog-format2-posts ul li div.extra a:hover { text-decoration: underline; }
+div.blog-format2-posts ul li div.desc a.read-more  {  @include default_button(5px 16px 5px 16px,12px);  }
+
+div.blog-format2-posts ul li div.datearea , div.blog-format2-posts ul li span.line  { display: none; }
+
+div.blog-format2-posts ul li.format-gallery div.gallery { margin:0px 0px 20px 0px; } 
+div.blog-format2-posts ul li.format-gallery br {  display: none; }
+div.blog-format2-posts ul li.format-gallery dl.gallery-item {float: left;margin: 0;padding: 0; width: 20%; }
+div.blog-format2-posts ul li.format-gallery dl.gallery-item a , div.blog-format2-posts ul li.format-gallery dl.gallery-item img { display: block; width: 100%; }
+div.blog-format2-posts ul li.format-gallery a.read-more { margin-top: 10px; }
+div.blog-format2-posts ul li.format-gallery i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format2-posts ul li.format-link div.desc  { position: relative; max-width: 100%; width:auto; float: none;  border:1px solid #f4f4f4; text-align: center;  padding: 25px; }
+div.blog-format2-posts ul li.format-link i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format2-posts ul li.format-link p { margin-bottom: 0; }
+div.blog-format2-posts ul li.format-link div.post-format-content p { margin: 0; }
+div.blog-format2-posts ul li.format-link  a { border-bottom:1px dotted #222; text-decoration: none; color:#111;  display: inline; text-align: center;  font-size:24px; font-style: italic; font-weight: 100; text-align: center; } 
+
+div.blog-format2-posts ul li.format-image div.image-wrap { float: none; width: 100%; }
+div.blog-format2-posts ul li.format-image div.image-wrap div.image { background:none;  }
+div.blog-format2-posts ul li.format-image div.image-wrap img { display: block; margin:0 auto; }
+div.blog-format2-posts ul li.format-image div.desc  { max-width: 100%; width:auto; float: none;  margin-top: 0; }
+
+div.blog-format2-posts ul li.format-video div.desc { max-width: 100%; width:auto; float: none;  margin-top: 0; }
+div.blog-format2-posts ul li.format-video div.desc p { display: block; }
+div.blog-format2-posts ul li.format-video iframe { margin:10px auto; }
+div.blog-format2-posts ul li.format-video i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format2-posts ul li.format-audio div.desc { max-width: 100%; width:auto; float: none;  margin-top: 0; padding:30px 0; position: relative; }
+div.blog-format2-posts ul li.format-audio i.icon-music  { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format2-posts ul li.format-quote div.desc { max-width: 100%; width:auto; float: none; margin-top: 0;  }
+div.blog-format2-posts ul li.format-quote div.quote {  text-align: center; padding:20px; border:2px solid $palette_color_1;  }
+div.blog-format2-posts ul li.format-quote div.quote blockquote { font-size:21px; font-style: italic; font-family: "Droid Serif",Georgia,Arial; font-weight: 100;  }
+div.blog-format2-posts ul li.format-quote div.quote .quote-caption { float: right; margin-bottom: 0; color:#888; }
+
+div.blog-format2-posts ul li.format-chat div.desc { max-width: 100%; width:auto; float: none;  margin-left:0px;  margin-top: 0; border:1px solid #eee; padding:30px; position: relative; }
+div.blog-format2-posts ul li.format-chat i.icon-comments-alt { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format2-posts ul li.format-chat i.icon-caret-down {  position: absolute; bottom:-24px; left:10px; font-size: 36px; color:#eee;  }
+div.blog-format2-posts ul li.format-chat img.avatar { margin-left:0px; margin-top: 14px; border:1px solid #eee; padding:4px; }
+
+div.blog-format2-posts ul li.format-status div.desc { max-width: 100%; text-align: center; width:auto; float: none; margin-left: 0; border:1px solid #eee; padding:30px; position: relative; }
+div.blog-format2-posts ul li.format-status i.icon-comment  { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format2-posts ul li .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.blog-format2-posts ul li .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+/**
+ * Blog Template Format 3
+ */
+
+div.blog-format3-posts ul {  margin:30px 0px 0 0 ; padding:0px;   }
+div.blog-format3-posts ul li { list-style:none;  margin: 3px 3px 0 0px;  padding: 0; position: relative; float: left; width:365px; border:1px solid #eee;    }
+.full-width-layout div.blog-format3-posts ul li { width: 525px; }
+
+div.blog-format3-posts ul li.no-posts-found { padding: 15px; float: none; width:auto; background:#e36804; text-align: center; color:#fff; margin:20px 0 30px 0; font-weight:700; }
+
+
+div.blog-format3-posts span.line {  z-index:1;  position: absolute; top:50px ; left:-62px; width:1px; height:3px;  background:#eee; }
+
+div.blog-format3-posts ul li div.image-wrap {  margin-bottom: 0px; }
+div.blog-format3-posts ul li div.image { position: relative; background:#eee; overflow:hidden;   } 
+div.blog-format3-posts ul li div.image a.imageholder , div.blog-format3-posts ul li div.image a.imageholder img { display: block;  }
+ div.blog-format3-posts ul li div.image a.imageholder img  { margin:0 auto; max-width:100%; height:auto; }
+div.blog-format3-posts ul li .hover i  { display: none; box-shadow:0px 0px 3px rgba(0,0,0,0.2);   }
+div.blog-format3-posts ul li .hover { z-index:1; background:$palette_color_2; display: none;  position: absolute;top:0; left:0; width: 100%; height:100%; bottom:28px;  }
+
+div.blog-format3-posts ul li .hover i.hover-lightbox { position: absolute; top:38%; left:43%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+
+div.blog-format3-posts ul li  h2 { margin: 0; font-size: 13px; line-height:1; text-align: center; padding:15px 10px; }
+div.blog-format3-posts ul li  h2 a { font-size: 13px;  word-wrap:break-word; text-decoration: none; color:#555; line-height:1; }
+div.blog-format3-posts ul li div.extra {; font-size: 11px; color:#888; padding:15px 10px;  text-align: center }
+div.blog-format3-posts ul li div.extra a { text-decoration: none; color:#666; display: inline-block; padding:0px 4px 0 0; }
+div.blog-format3-posts ul li div.extra a:hover { text-decoration: underline; }
+div.blog-format3-posts ul li div.desc a.read-more  { display: none; }
+
+div.blog-format3-posts ul li div.datearea , div.blog-format3-posts ul li span.line  { display: none; }
+
+div.blog-format3-posts ul li.format-gallery div.gallery { margin:0px 0px 0px 0px; border-bottom:1px solid #f4f4f4; } 
+div.blog-format3-posts ul li.format-gallery br {  display: none; }
+div.blog-format3-posts ul li.format-gallery dl.gallery-item {float: left;margin: 0;padding: 0; width:25%; }
+div.blog-format3-posts ul li.format-gallery dl.gallery-item a , div.blog-format3-posts ul li.format-gallery dl.gallery-item img { display: block; width:100%; }
+div.blog-format3-posts ul li.format-gallery a.read-more {  }
+div.blog-format3-posts ul li.format-gallery i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+
+div.blog-format3-posts ul li  .seleneGallery ul.selene-thumbnails { padding-left: 3px; height:45px; }
+div.blog-format3-posts ul li  .seleneGallery ul.selene-thumbnails li {  padding:3px; list-style:none; position: relative; width:34px; height:34px;  }
+div.blog-format3-posts ul li  .seleneGallery .selene-thumbnails-wrap {  height:45px; }
+
+div.blog-format3-posts ul li.format-link div.desc p { margin-bottom:0; }
+div.blog-format3-posts ul li.format-link div.desc  { position: relative; max-width: 100%; width:auto; float: none; margin:0px;  text-align: center;  padding: 25px; }
+div.blog-format3-posts ul li.format-link i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format3-posts ul li.format-link  p { margin: 0; }
+div.blog-format3-posts ul li.format-link  a {border-bottom:1px dotted #222; text-decoration: none; color:#111;  display: inline; text-align: center; font-size:24px; font-style: italic; font-weight: 100; text-align: center; } 
+
+div.blog-format3-posts ul li.format-image div.image-wrap { float: none; width: 100%; }
+div.blog-format3-posts ul li.format-image div.image-wrap div.image { background:none;  }
+div.blog-format3-posts ul li.format-image div.image-wrap img { display: block; margin:0 auto; max-width:100%; }
+div.blog-format3-posts ul li.format-image div.desc  { max-width: 100%; width:auto; float: none;  margin-top: 0; }
+
+div.blog-format3-posts ul li.format-video div.desc { max-width: 100%; width:auto; float: none;  margin-top: 0; }
+div.blog-format3-posts ul li.format-video div.desc p { display: block; }
+div.blog-format3-posts ul li.format-video iframe { margin:0px auto; }
+div.blog-format3-posts ul li.format-video i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format3-posts ul li.format-video div.video { }
+
+div.blog-format3-posts ul li.format-audio div.desc { max-width: 100%; width:auto; float: none;  margin-top:20px; padding:30px; position: relative; }
+div.blog-format3-posts ul li.format-audio i.icon-music  {  position: absolute; top:10px; right:10px; font-size: 18px; color:#ddd;  }
+
+
+div.blog-format3-posts ul li.format-quote div.desc { max-width: 100%; width:auto; float: none; margin:15px;  }
+div.blog-format3-posts ul li.format-quote div.quote {  text-align: center; padding:20px; border:2px solid $palette_color_1;  }
+div.blog-format3-posts ul li.format-quote div.quote blockquote { font-size:21px; font-style: italic; font-family: "Droid Serif",Georgia,Arial; font-weight: 100;  }
+div.blog-format3-posts ul li.format-quote div.quote .quote-caption { float: right; margin-bottom: 0; color:#888; }
+
+div.blog-format3-posts ul li.format-chat div.desc { max-width: 100%; width:auto; float: none; margin:20px; text-align: center; padding:30px; position: relative; }
+div.blog-format3-posts ul li.format-chat i.icon-comments-alt   { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format3-posts ul li.format-chat i.icon-caret-down {  position: absolute; bottom:-24px; left:10px; font-size: 36px; color:#eee;  }
+div.blog-format3-posts ul li.format-chat img.avatar { margin-left:20px; margin-top: 0px; border:1px solid #eee; padding:4px; }
+
+div.blog-format3-posts ul li.format-status div.desc { max-width: 100%; font-weight: 700; text-align: center;  width:auto; float: none; margin-left: 0;  padding:30px; position: relative; }
+div.blog-format3-posts ul li.format-status i.icon-comment  { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format3-posts ul li .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.blog-format3-posts ul li .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+div.blog-format3-posts ul li div.video {  margin-top: 0; }
+/**
+ * Blog Template Format 4
+ */
+
+div.blog-format4-posts ul {  margin: 0 0px 0 0; padding: 30px 0 0 0px;  }
+div.blog-format4-posts ul li { list-style:none;  margin: 0; padding:0px 0px 30px 0; position: relative;  }
+div.blog-format4-posts ul li.no-posts-found { padding: 15px; background:#e36804; text-align: center; color:#fff; margin:0px 0 30px 0; font-weight:700; }
+
+
+div.blog-format4-posts div.proxy-datearea {  overflow:hidden; height:0;	 box-shadow:0px 0px 2px 2px #fafafa; position: absolute; top:0px ; left:0px; width:77px; padding:0; background:#1ab6e9;  }
+
+div.blog-format4-posts div.proxy-datearea small.date { padding-top:14px; color:#fff;}
+div.blog-format4-posts div.proxy-datearea  small.month { padding-bottom: 14px;  color:#fff;}
+
+div.blog-format4-posts span.line {  z-index:1;  position: absolute; top:50px ; left:-62px; width:1px; height:3px;  background:#eee; }
+
+div.blog-format4-posts ul li div.video , div.blog-format4-posts ul li div.ioa-gallery { margin-bottom: 20px; }
+div.blog-format4-posts ul li div.image-wrap {  margin-bottom: 0px; background:url(sprites/i/shadows/sh_type1.png) bottom left no-repeat; padding-bottom: 32px;}
+div.blog-format4-posts ul li div.image { position: relative; background:#eee; overflow:hidden;   } 
+div.blog-format4-posts ul li div.image a.imageholder , div.blog-format4-posts ul li div.image a.imageholder img { display: block;  }
+div.blog-format4-posts ul li div.image a.imageholder img { margin:0 auto; max-width:100%; height:auto; }
+div.blog-format4-posts ul li .hover i  { display: none; box-shadow:0px 0px 3px rgba(0,0,0,0.2);   }
+div.blog-format4-posts ul li .hover { z-index:1; background:$palette_color_2; display: none;  position: absolute;top:0; left:0; width: 100%; height:100%; bottom:28px;  }
+
+div.blog-format4-posts ul li .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.blog-format4-posts ul li .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+div.blog-format4-posts ul li div.desc a.read-more  { margin-bottom: 20px;  word-wrap:break-word; @include default_button(5px 16px 5px 16px,12px);  }
+
+div.blog-format4-posts ul li div.desc { max-width:70%; margin:10px auto 2px auto; font-weight: 100; }
+
+div.blog-format4-posts ul li  h2 { margin-bottom: 0; line-height:1;  }
+div.blog-format4-posts ul li  h2 a { font-size: 16px;  word-wrap:break-word; text-decoration: none; color:#555; }
+div.blog-format4-posts ul li div.extra { font-size: 11px; color:#888; font-weight: 100; margin-bottom: 15px; margin-top:10px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; }
+div.blog-format4-posts ul li div.extra a { text-decoration: none; color:#666; font-style: italic; display: inline-block; margin-right: 4px; }
+div.blog-format4-posts ul li div.extra a:hover { text-decoration: underline; }
+
+div.blog-format4-posts ul li div.post-content-area {  overflow:hidden;  }
+div.blog-format4-posts ul li a.bottom-view-toggle { visibility:hidden; opacity:0; color:#444; border-top:1px solid #eee;  display: block; text-align: center; background:#fff; height:21px; text-decoration: none;  padding-top: 20px;  }
+
+div.blog-format4-posts ul li div.datearea , div.blog-format4-posts ul li span.line  { display: none; }
+
+div.blog-format4-posts ul li.format-gallery div.gallery { margin:0px 0px 20px 0px; } 
+div.blog-format4-posts ul li.format-gallery br {  display: none; }
+div.blog-format4-posts ul li.format-gallery dl.gallery-item {float: left;margin: 0;padding: 0; width: 20%; }
+div.blog-format4-posts ul li.format-gallery dl.gallery-item a , div.blog-format4-posts ul li.format-gallery dl.gallery-item img { display: block; width: 100%; }
+div.blog-format4-posts ul li.format-gallery dl.gallery-item img { width: 100%; }
+div.blog-format4-posts ul li.format-gallery a.read-more { margin-top: 10px; }
+div.blog-format4-posts ul li.format-gallery i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format4-posts ul li.format-gallery div.desc h2 { margin-bottom: 10px; }
+
+div.blog-format4-posts ul li.format-link div.desc  { margin-top: 0; text-align: center; position: relative; max-width: 100%; width:auto; float: none;  border:1px solid #f4f4f4;  padding: 25px; }
+div.blog-format4-posts ul li.format-link i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format4-posts ul li.format-link p { margin: 0; }
+div.blog-format4-posts ul li.format-link a { border-bottom:1px dotted #222; text-decoration: none; color:#111;  display: inline; text-align: center; font-size:24px; font-style: italic; font-weight: 100; text-align: center; } 
+
+div.blog-format4-posts ul li.format-image div.image-wrap { float: none; width: 100%; }
+div.blog-format4-posts ul li.format-image div.image-wrap div.image { background:none;  }
+div.blog-format4-posts ul li.format-image div.image-wrap img { display: block; margin:0 auto; }
+div.blog-format4-posts ul li.format-image div.desc  { max-width: 100%; width:auto; float: none;  margin-top: 0; }
+
+div.blog-format4-posts ul li.format-video div.desc { max-width: 100%; width:auto; float: none;  margin-top: 0; }
+div.blog-format4-posts ul li.format-video div.desc p { display: block; }
+div.blog-format4-posts ul li.format-video iframe { margin:0px auto; }
+div.blog-format4-posts ul li.format-video i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format4-posts ul li.format-audio div.desc { max-width: 100%; width:auto; float: none;  margin-top: 0; padding:30px 0; position: relative; }
+div.blog-format4-posts ul li.format-audio i.icon-music  { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format4-posts ul li.format-quote div.desc { max-width: 100%; width:auto; float: none; margin-top: 0;  }
+div.blog-format4-posts ul li.format-quote div.quote {  text-align: center; padding:20px; border:2px solid $palette_color_1;  }
+div.blog-format4-posts ul li.format-quote div.quote blockquote { font-size:21px; font-style: italic; font-family: "Droid Serif",Georgia,Arial; font-weight: 100;  }
+div.blog-format4-posts ul li.format-quote div.quote .quote-caption { float: right; margin-bottom: 0; color:#888; }
+
+div.blog-format4-posts ul li.format-chat div.desc { max-width: 100%; width:auto; float: none;  margin-left:0px;  margin-top: 0; border:1px solid #eee; padding:30px; position: relative; }
+div.blog-format4-posts ul li.format-chat i.icon-comments-alt { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format4-posts ul li.format-chat i.icon-caret-down {  position: absolute; bottom:-24px; left:10px; font-size: 36px; color:#eee;  }
+div.blog-format4-posts ul li.format-chat img.avatar { margin-left:0px; margin-top: 14px; border:1px solid #eee; padding:4px; }
+
+div.blog-format4-posts ul li.format-status div.desc { max-width: 100%;  text-align: center; width:auto; float: none; margin-top: 0; margin-left: 0; border:1px solid #f4f4f4; padding:30px; position: relative; }
+div.blog-format4-posts ul li.format-status i.icon-comment  { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format4-posts ul li.format-status div.desc h2 { margin-bottom: 15px; }
+div.blog-format4-posts ul li .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.blog-format4-posts ul li .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+
+/**
+ * Blog Template Format 5
+ */
+
+div.blog-format5-posts ul {  margin: 0; padding: 30px 0px 0 0px;  }
+div.blog-format5-posts ul.blog_posts>li { list-style:none;   margin:0px 8px 20px 8px;  float: left; width: 350px; position: relative;  }
+div.blog-format5-posts ul.blog_posts>li.no-posts-found {  width:auto; float: none;  padding: 15px; background:#e36804; text-align: center; color:#fff; margin:0px 0 30px 0; font-weight:700; }
+.full-width-layout  div.blog-format5-posts ul.blog_posts>li.no-posts-found {  float: none; width:auto;  }
+
+.full-width-layout div.blog-format5-posts ul.blog_posts>li { width: 512px; }
+
+div.blog-format5-posts ul li.featured , .full-width-layout div.blog-format5-posts ul li.featured  { clear:both; width:auto; float: none; margin: 0;  }
+
+div.blog-format5-posts ul li.spacer { clear:both; width: 20%; margin:0px auto 20px auto; float: none; height:0; border-bottom:2px solid #eee; }
+
+div.blog-format5-posts ul li div.image-wrap {  margin-bottom: 0px;  }
+div.blog-format5-posts ul li div.image { position: relative;    } 
+div.blog-format5-posts ul li div.video { margin-top: 0 }
+div.blog-format5-posts ul li div.image a.imageholder , div.blog-format5-posts ul li div.image a.imageholder img { display: block; max-width:100%; }
+div.blog-format5-posts ul li div.image a.imageholder img { margin: 0 auto; max-width:100%; height:auto; }
+div.blog-format5-posts ul li .hover i  { display: none; box-shadow:0px 0px 3px rgba(0,0,0,0.2);   }
+div.blog-format5-posts ul li .hover { z-index:1; background:$palette_color_2; display: none;  position: absolute;top:0; left:0; width: 100%; height:100%; bottom:28px;  }
+
+div.blog-format5-posts ul li .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.blog-format5-posts ul li .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+
+div.blog-format5-posts ul li div.desc { word-wrap:break-word; padding:18px 0px 18px 0px; font-weight: 100; }
+
+div.blog-format5-posts ul li div.desc h2 { margin-bottom: 0; font-size: 16px; line-height:1;  }
+div.blog-format5-posts ul li div.desc h2 a {  text-decoration: none;  word-wrap:break-word; color:#555; }
+div.blog-format5-posts ul li div.extra { font-size: 11px; margin-top: 20px; color:#888; margin-bottom: 15px; border-top:1px solid #eee; border-bottom:1px solid #eee; }
+div.blog-format5-posts ul li div.extra a { text-decoration: none; color:#666; margin-right: 5px; }
+div.blog-format5-posts ul li div.extra a:hover { text-decoration: underline; }
+div.blog-format5-posts ul li div.desc a.read-more  {  @include default_button(5px 16px 5px 16px,12px); text-decoration: none; margin-top: 15px; margin-bottom: 10px;  }
+
+div.blog-format5-posts ul li div.datearea , div.blog-format5-posts ul li span.line  { display: none; }
+
+div.blog-format5-posts ul li.format-gallery div.desc h2 { margin-bottom: 15px; }
+div.blog-format5-posts ul li.format-gallery i.icon { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format5-posts ul li.format-gallery div.gallery { margin:0px 0px 0px 0px; } 
+div.blog-format5-posts ul li.format-gallery br {  display: none; }
+div.blog-format5-posts ul li.format-gallery dl.gallery-item {float: left;margin: 0;padding: 0; width: 33.3%; }
+div.blog-format5-posts ul li.format-gallery dl.gallery-item a , div.blog-format5-posts ul li.format-gallery dl.gallery-item img { display: block;width:100%; }
+div.blog-format5-posts ul li.format-gallery a.read-more { margin-top: 10px; }
+
+div.blog-format5-posts ul li.format-link div.desc  { position: relative; max-width: 100%; text-align: center; width:auto; float: none;  border:1px solid #f4f4f4;  padding: 25px; }
+div.blog-format5-posts ul li.format-link i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format5-posts ul li.format-link div.post-format-content p { margin: 0; }
+div.blog-format5-posts ul li.format-link div.post-format-content a { text-decoration: none;  display: block;  font-size:24px; font-style: italic; font-weight: 100; text-align: center; } 
+
+div.blog-format5-posts ul li.format-image div.image-wrap { float: none; width: 100%; }
+div.blog-format5-posts ul li.format-image div.image-wrap div.image { background:none;  }
+div.blog-format5-posts ul li.format-image div.image-wrap img { display: block; margin:0 auto; }
+div.blog-format5-posts ul li.format-image div.desc  { max-width: 100%; width:auto; float: none;  margin-top: 0; }
+
+div.blog-format5-posts ul li.format-video div.desc { max-width: 100%; width:auto; float: none;  margin-top: 0; }
+div.blog-format5-posts ul li.format-video div.desc p { display: block; }
+div.blog-format5-posts ul li.format-video iframe { margin:10px auto; }
+div.blog-format5-posts ul li.format-video i { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format5-posts ul li.format-audio div.desc { max-width: 100%; width:auto; float: none;  margin-top: 0; padding:30px 0; position: relative; }
+div.blog-format5-posts ul li.format-audio i.icon-music  { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format5-posts ul li.format-quote div.desc { max-width: 100%; width:auto; float: none; margin-top: 0;  }
+div.blog-format5-posts ul li.format-quote div.quote {  text-align: center; padding:20px; border:2px solid $palette_color_1;  }
+div.blog-format5-posts ul li.format-quote div.quote blockquote { font-size:21px; font-style: italic; font-family: "Droid Serif",Georgia,Arial; font-weight: 100;  }
+div.blog-format5-posts ul li.format-quote div.quote .quote-caption { float: right; margin-bottom: 0; color:#888; }
+
+div.blog-format5-posts ul li.format-chat div.desc { max-width: 100%; width:auto; float: none;  margin:0px; border:1px solid #eee; padding:30px; position: relative; }
+div.blog-format5-posts ul li.format-chat i.icon-comments-alt { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format5-posts ul li.format-chat p { margin-bottom: 0 }
+div.blog-format5-posts ul li.format-chat i.icon-caret-down { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+div.blog-format5-posts ul li.format-chat img.avatar { margin-left:0px; margin-top:20px; border:1px solid #eee; padding:4px; }
+
+div.blog-format5-posts ul li.format-status div.desc h2 {  margin-bottom: 10px; }
+div.blog-format5-posts ul li.format-status div.desc { text-align: center; max-width: 100%;  width:auto; float: none; margin-left: 0; border:1px dotted #eee; padding:30px; position: relative; }
+div.blog-format5-posts ul li.format-status i.icon-comment { position: absolute; top:0; right:0; z-index:99; background:$palette_color_2; color:#fff; padding:13px; font-size: 14px; }
+
+div.blog-format5-posts ul li .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.blog-format5-posts ul li .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+/**
+ * Blog Template Format 6
+ */
+
+div.blog-format6-posts ul {  margin: 0; padding: 0 0 0 0px;  }
+div.blog-format6-posts ul li { list-style:none;  margin:0px; padding:40px 0;  border-color:#f4f4f4;  position: relative; color:#444; }
+div.blog-format6-posts ul li.no-posts-found { margin:0 auto; }
+div.blog-format6-posts ul li.no-posts-found h4 { padding: 15px; background:#e36804; text-align: center; color:#fff; margin:10px 0; font-weight:700; }
+
+div.blog-format6-posts ul li div.image-wrap , 
+div.blog-format6-posts ul li div.video ,
+div.blog-format6-posts ul li div.ioa-gallery , div.blog-format6-posts ul li .ioaslider {  margin-bottom: 0px; width:600px; margin-right: 40px; float: left;  }
+div.blog-format6-posts ul li div.image { position: relative;    } 
+div.blog-format6-posts ul li div.image a.imageholder , div.blog-format6-posts ul li div.image a.imageholder img { display: block;  }
+div.blog-format6-posts ul li div.image a.imageholder img { margin:0 auto; max-width:100%; height:auto; }
+div.blog-format6-posts ul li .hover i  { display: none; box-shadow:0px 0px 3px rgba(0,0,0,0.2);   }
+div.blog-format6-posts ul li .hover { z-index:1; background:$palette_color_2; display: none;  position: absolute;top:0; left:0; width: 100%; height:100%; bottom:28px;  }
+
+div.blog-format6-posts ul li div.extra { font-size: 11px; margin-top: 20px; color:#888;  border-top:1px solid #fff; border-bottom:1px solid #fff; border-color:inherit; }
+div.blog-format6-posts ul li div.extra a { text-decoration: none; color:#666; margin-right: 5px; }
+div.blog-format6-posts ul li div.extra a:hover { text-decoration: underline; }
+
+div.blog-format6-posts ul li div.desc { width: 420px;  word-wrap:break-word; padding:0px; float: left; font-size: 12px; border-color:inherit; }
+
+div.blog-format6-posts ul li div.desc h2 { margin-bottom: 0; line-height:1;  color:inherit;   }
+div.blog-format6-posts ul li div.desc h2 a { font-size: 16px; word-wrap:break-word; text-decoration: none; color:inherit; }
+div.blog-format6-posts ul li div.extra { font-size: 11px; margin-bottom: 15px;   color:inherit; }
+div.blog-format6-posts ul li div.extra a { text-decoration: none;   color:inherit;  }
+div.blog-format6-posts ul li div.extra a:hover { text-decoration: underline; }
+div.blog-format6-posts ul li div.desc a.read-more  { text-decoration: none;  padding:4px 12px; border:2px solid #555; font-weight: 700; margin-bottom: 10px; color:inherit; font-size:11px; float: left; margin-top: 15px; }
+div.blog-format6-posts ul li div.desc a.read-more:hover {  }
+
+div.blog-format6-posts ul li .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.blog-format6-posts ul li .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+
+/**
+ * Blog Template Format 7
+ */
+
+div.blog-format7-posts ul {  margin: 0; padding: 0 0 0 0px;  }
+div.blog-format7-posts ul li { list-style:none;  margin:0px; position: relative; position: relative; color:#444; text-align: center; }
+div.blog-format7-posts ul li.no-posts-found { margin:30px auto; }
+div.blog-format7-posts ul li.no-posts-found h4 { padding: 15px; background:#e36804; text-align: center; color:#fff; margin:10px 0; font-weight:700; }
+
+
+div.blog-format7-posts ul li div.image-wrap {  margin-bottom: 20px;   }
+div.blog-format7-posts ul li div.image { position: relative;    } 
+div.blog-format7-posts ul li div.image a.imageholder , div.blog-format7-posts ul li div.image a.imageholder img { display: block; margin:0 auto; max-width:100%;  }
+div.blog-format7-posts ul li div.image a.imageholder img  { height:auto; }
+div.blog-format7-posts ul li .hover i  { display: none; box-shadow:0px 0px 3px rgba(0,0,0,0.2);   }
+div.blog-format7-posts ul li .hover { z-index:1; background:$palette_color_2; display: none;  position: absolute;top:0; left:0; width: 100%; height:100%; bottom:28px;  }
+
+div.blog-format7-posts ul li .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.blog-format7-posts ul li .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+div.blog-format7-posts div.overlay {  position:absolute; top:0; left:0;  width: 100%; height:0; }
+div.blog-format7-posts div.skeleton { padding:40px 0; position: relative; z-index:5;   }
+
+div.blog-format7-posts ul li div.desc { padding:0px; font-size: 12px;   word-wrap:break-word; background:inherit; }
+div.blog-format7-posts ul li span.spacer {  height: 2px; background:#777; display: block; width: 20%; margin:0 auto; }
+div.blog-format7-posts ul li  h2 { margin-bottom: 0; line-height:1;  color:inherit;  }
+div.blog-format7-posts ul li  h2 a { font-size: 16px;  word-wrap:break-word; text-decoration: none; color:inherit; }
+div.blog-format7-posts ul li div.extra { font-size: 10px; margin-top:0px; color:inherit; margin-bottom: 5px;  }
+div.blog-format7-posts ul li div.extra a { text-decoration: none; color:inherit; margin-right: 5px; }
+div.blog-format7-posts ul li div.extra a:hover { text-decoration: underline; }
+div.blog-format7-posts ul li div.desc a.read-more  { text-decoration: none; margin-bottom: 10px; color:inherit; font-size:11px; text-transform: uppercase; color:inherit; padding:5px 15px; display: block;  box-shadow:none; }
+div.blog-format7-posts ul li div.desc a.read-more:hover { text-decoration: underline; }
+div.blog-format7-posts ul li div.desc div.excerpt { max-width:50%; margin:0 auto; }
+
+
+
+
+/**
+ * Blog Template Format 9
+ */
+
+
+div.posts-tree {  margin-bottom:40px; position:relative; }
+
+
+div.posts-tree  .no-posts-found  { padding: 15px; background:#e36804; text-align: center; color:#fff; margin:10px 0; font-weight:700; }
+
+div.posts-tree div.left-post { background:#fff; width:330px; float:left;   border:1px solid #f4f4f4; margin:10px 0px 30px 0px; clear:left; padding:0px; position:relative; z-index:2; }
+div.posts-tree div.left-post h3.title { font-size:15px; padding:15px; font-weight:600; text-align: right; line-height:1.2; margin-bottom: 0; position:relative; }
+div.posts-tree div.left-post h3.title a{ color:#262A30;  word-wrap:break-word; text-decoration: none; }
+div.posts-tree div.left-post h3.title a:hover{color:$palette_color_2;text-decoration: none;}
+
+div.posts-tree div.left-post div.image a.imageholder , div.posts-tree div.left-post div.image img { display: block; }
+div.posts-tree div.left-post div.image {  position: relative; z-index:2; } 
+div.posts-tree div.left-post div.image img { width:100%; height:auto; }
+div.posts-tree div.left-post div.desc {margin: 15px; font-size: 12px; text-align: right; }
+div.posts-tree div.left-post a.main-button { text-decoration: none;float: right; margin:0px 10px 10px 0px; padding:4px 15px; border-radius:2px;color: #fff; background:#777; font-weight:600;  font-size:11px; }
+
+div.posts-tree div.left-post  span.dot {  display: none; border-radius:100%;  z-index:2; background:#eee;  height:12px; width:12px; position:absolute; right:-30px; top:47%; }
+div.posts-tree div.left-post  span.tip { display: none; background:#ddd ; border-radius:100%;  width:12px; height:12px; position:absolute; top:47%; right:-6px; }
+div.posts-tree div.left-post  span.connector {   background:#ddd; display:block;  height:1px; width:0px; position:absolute; left:5px; top:5px; }
+
+div.posts-tree div.left-post span.date { font-size:21px; color:#fff; background:#777;font-weight: 500; padding:10px 15px; position: absolute; display: block; top:0px; z-index:10; right:0px; display:block; }
+
+div.posts-tree div.right-post div.image a.imageholder , div.posts-tree div.right-post div.image img { display: block; }
+div.posts-tree div.right-post div.image img { height:auto; }
+div.posts-tree div.right-post { background:#fff; width:330px; float:right; border:1px solid #f4f4f4; margin:10px 0px 30px 0px; clear:right;padding:0px; position:relative; z-index:2; }
+div.posts-tree div.right-post h3.title { font-size:15px; padding:15px; font-weight:600; line-height:1.2; margin-bottom: 0; position:relative; z-index:5; }
+div.posts-tree div.right-post h3.title a{ color:#262A30; text-decoration: none; }
+div.posts-tree div.right-post h3.title a:hover{color:$palette_color_2;text-decoration: none;}
+div.posts-tree div.right-post span.date { font-size:21px; color:#fff; background:#777;font-weight: 500; padding:10px 15px; position: absolute; display: block; top:0px; z-index:10; left:0px; display:block; }
+div.posts-tree div.right-post div.image {  position: relative; z-index:4; }
+div.posts-tree div.right-post div.desc {margin: 15px; font-size: 12px; }
+div.posts-tree div.right-post a.main-button { text-decoration: none;float: left; margin:0px 0px 10px 10px; padding:4px 15px; border-radius:2px;color: #fff; background:#777; font-weight:600; font-size:11px; }
+
+div.posts-tree div.right-post  span.tip {  display: none; z-index:2; border-radius:100%;  background:#ddd; width:12px; height:12px; position:absolute; top:47%; left:-6px; }
+div.posts-tree div.right-post  span.dot  {  display: none; z-index:3; border-radius:100%; background:#eee;  height:12px; width:12px; position:absolute; left:-30px; top:47%; }
+div.posts-tree div.right-post  span.connector {   background:#ddd; display:block;  height:1px; width:0px; position:absolute; right:5px; top:5px; }
+
+div.posts-tree .hover i  { display: none; box-shadow:0px 0px 3px rgba(0,0,0,0.2);   }
+div.posts-tree .hover { z-index:1; background:$palette_color_2; display: none;  position: absolute;top:0; left:0; width: 100%; height:100%; bottom:28px;  }
+
+div.posts-tree .hover i.hover-link { position: absolute; top:42%; left:42%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+div.posts-tree .hover i.hover-lightbox { position: absolute; top:42%; left:51%; background:#fff; font-size: 18px; color:#444; padding:21px 0; width:60px; text-align: center; border-radius:100%; display: block; text-decoration:none; }
+
+
+div.posts-tree div.right-post div.image img { width:100%; }
+
+div.posts-tree span.line { position: absolute; top:0; left:49.99%; height:100%; background:#eee; width:1px; display: block; }
+
+div.posts-tree { position: relative; margin-top: 30px; }
+div.posts-tree h4.month-label { position: relative; font-size: 13px; z-index:2; padding:15px;border-radius:2px;background: #fff;border-bottom:2px solid $palette_color_2; width:100px; margin:0px auto 30px auto; text-align:center; clear:both;  }
+div.posts-tree h4.post-end { position: relative; font-size: 12px; z-index:2; padding:15px;border-radius:2px; background: #444; text-align: center; color:#fff; width:100px; margin:0px auto 30px auto; text-align:center; clear:both;  }
+span.circle { position:absolute; left:38.9%; bottom:-32px;  width:30px; height:30px; 
+    background:url(sprites/i/loader.gif) center center no-repeat #fff; padding: 4px; border-radius:4px;
+    opacity:1;
+    font-size: 11px; z-index:5; }

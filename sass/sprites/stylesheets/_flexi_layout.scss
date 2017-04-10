@@ -1,0 +1,23 @@
+
+$max_width : 100%;
+
+.nested .one_half , .nested .one_half_last { width: #{$max_width/2} ;  }
+
+.nested .one_third  { width: #{$max_width/3};  }
+.nested .one_third_last  { width: #{$max_width/3};  }
+
+.nested .one_fourth { width: #{$max_width/4};  }
+.nested .one_fourth_last { width: #{$max_width/4};  }
+
+.nested .two_third { width: #{$max_width * (2/3) };  }
+.nested .two_third_last  { width: #{$max_width * (2/3) };  }
+
+.nested .three_fourth  { width: #{$max_width* (3/4) };  }
+.nested .three_fourth_last { width: #{$max_width * (3/4) };  }
+
+.nested .one_fifth { width: #{$max_width/5};  }
+.nested .one_fifth_last  { width: #{$max_width/5};  }
+
+.nested .four_fifth  { width: #{$max_width * (4/5) };  }
+.nested .four_fifth_last { width: #{$max_width * (4/5) };  } 
+

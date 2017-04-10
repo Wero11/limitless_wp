@@ -1,0 +1,42 @@
+@import "values";
+@import "mixins";
+
+
+div.pricing-table  {  display:inline-block; padding-top: 30px; padding-bottom: 30px; }
+div.pricing-table  div.plan {  background:#fff; border:1px solid #f4f4f4; width:201px; float: left; position: relative; z-index: 1;  }
+
+div.pricing-table div.plan h6 { margin: 0; padding:3px 0px; text-align: center;  color:#777; text-transform: uppercase; font-size: 12px;
+border-bottom:1px solid #f4f4f4; 
+ }
+
+div.pricing_area {  padding:48px 10px 70px 10px;}  
+div.pricing_area h2 { font-size: 60px; line-height:1; color:#333; font-weight: 700; letter-spacing:-2px; text-align: center; }
+div.pricing_area span.suffix { font-size:12px; font-style: italic; color:#999; text-align: center; display: block; }
+
+div.pricing-table ul.pricing-row { margin:0; padding:0; border-top: 1px solid #f9f9f9;  }
+div.pricing-table ul.pricing-row li { color:#888888; padding:11px 8px; border-bottom:1px solid #f4f4f4; list-style:none; text-align: center;  }
+
+div.pricing-table ul.pricing-row li.sign-up { padding: 0; border-bottom:none!important; }
+ul.pricing-row li.sign-up a { background:#222; display:block; margin:0px; 
+	text-transform: uppercase; position: relative; 
+	color:#fff; font-weight: 600; text-align: center; padding:12px 2px; margin: 10px; text-decoration: none; }
+
+/**
+ * Pricing Table Settings
+ */
+div.pricing-table div.featured-plan.plan { margin-top:-33px; box-shadow:0px 0px 20px rgba(0,0,0,0.06);  z-index: 2; }
+div.pricing-table div.featured-plan.plan  ul.pricing-row { margin:0;  }
+div.pricing-table div.featured-plan.plan h6 {  color:#666; }
+div.pricing-table div.featured-plan.plan ul.pricing-row li.sign-up a { background:#bf0000; }
+div.featured-plan.plan div.pricing_area  h2 { font-size: 85px; }
+div.featured-plan.plan div.pricing_area {  padding-bottom: 90px; }
+
+/**
+ * Feature Column
+ */
+
+
+div.feature-column { background:#fff;box-shadow:-17px 0px 30px rgba(0,0,0,0.04);  margin-top: 30px; width:215px; z-index:4; float: left; position: relative;  border:1px solid #f4f4f4;  border-right:none; }
+div.feature-column div.feature_area { margin-bottom:1px; min-height:213px; }
+div.feature-column div.feature_area h2 { color:#777; font-size:32px; text-align: center; padding:20px; line-height:1.1; margin-bottom: 0; padding-bottom: 2px; }
+div.feature-column div.feature_area span.info { font-size: 10px; color:#909090; text-align: center; display: block; padding:1px 10px; }

@@ -1,0 +1,86 @@
+/**
+ * Header Construction Stylings
+ */
+@import "commons";
+
+a.save-header-data { @include save_button; float: left; padding:13px 24px; margin:0px 20px 0px 10px; }
+a.delete-header-data { @include save_button; float: right; padding:10px 16px; margin:5px 0px 0px 10px; background:#d71023; }
+
+.ioa_panel_wrap a.delete-header-data { float: right; }
+
+a.save-header-data:hover , a.save-header-data:focus { color:#fff; }
+a.delete-header-data:hover , a.delete-header-data:focus { color:#fff; }
+div.hcon-toolbar { margin-top: 20px; margin-left: 50px; }
+div.hcon-toolbar ul { padding:0; margin:0; float: left; background:#fcfcfc; border:1px solid #eee; box-shadow:0px 0px 2px 2px #fafafa; }
+div.hcon-toolbar ul li { float: left; margin: 0; }
+div.hcon-toolbar ul li div.ioa_input {  padding: 9px 10px; }
+div.hcon-toolbar ul li div.ioa_input label { width:auto; padding-top: 9px; }
+
+#header_constructor { margin-top: 20px; margin-left: 60px; box-shadow:0px 0px 2px 2px #fafafa; border: 1px solid #e8e8e8;    }
+
+.hcon-head { height: 41px; background:url(i/header-constructor-top-bar-bg.jpg) #fcfcfc; border-bottom: 1px solid #e8e8e8;   }
+.hcon-head .sidebar-head { width: 217px; height: 41px; float: left; background:url(i/header-constructor-divider.jpg) 100% 10px no-repeat ;}
+.hcon-head .sidebar-head h6 {margin: 0; padding:13px 0 0  0; display: block;  text-align: center; text-transform: uppercase; font-size: 10px; font-weight: 600; }
+
+.hcon-head .main-head { height: 41px;  float:left;  position: relative; }
+.hcon-head .main-head > a { float:left; text-shadow: 1px 1px 0px #fff; border-radius:15px ;margin: 20px 10px 10px 10px; background: url(i/button-bg.png) repeat-x; height: auto; line-height: 1; padding: 9px 25px; text-decoration: none; color: #444; border:1px solid #000; font-size: 11px; font-weight: 700; }
+
+
+
+.hcon-sidebar { width: 210px; float: left; border-right: 1px solid #dcb276; background: url(i/header-constructor-sidebar-bg.jpg); min-height: 600px; position: relative; z-index: 2; }
+.hcon-sidebar div.info { background: #fff; text-align: center; border:1px solid #a6906e; color: #575757; font-size: 11px; padding: 14px; font-style: italic; font-weight: 600; margin: 15px; }
+.hcon-sidebar div.components-area {  }
+.hcon-sidebar ul { padding: 12px; margin: 0; min-height:300px; }
+
+.hcon-sidebar ul li { width: 89px; height:89px; float: left; text-indent:-9999px; background: url(i/header-constructor-widgets-sprites.png) ; padding:0; margin: 2px; }
+.hcon-sidebar ul li.text { background-position:0px -194px; }
+.hcon-sidebar ul li.main-menu { background-position:-96px -194px; }
+.hcon-sidebar ul li.top-menu { background-position:0px -291px; }
+.hcon-sidebar ul li.tagline { background-position:-96px 0px; }
+.hcon-sidebar ul li.search { background-position:-96px -97px;  }
+.hcon-sidebar ul li.social { background-position:0px -97px;  }
+.hcon-sidebar ul li.wpml { background-position:-96px -291px;  }
+.hcon-sidebar ul li a { display: none; }
+.hcon-sidebar ul#hcon-comps.adding { background: rgba(0,0,0,0.1);  }
+.hcon-sidebar ul li.ui-draggable-dragging { opacity: 1; }
+
+.hcon-main-body { width: 456px; float: left; background:#fff; min-height: 601px; }
+
+div.hcon-widget { position: relative; margin: 10px; }
+div.hcon-widget span.label { font-weight: 500; text-transform: uppercase; color:#40444d; font-size: 10px; float: left; margin-top: 5px; }
+div.hcon-widget span.height { font-weight: 500; text-transform: uppercase; color:#40444d; font-size: 10px; float: right;  }
+div.hcon-widget span.height input { width:35px; font-size:11px; border-radius:0; margin:0px 2px 4px 0px; }
+div.hcon-widget span.height input.error { border:1px solid #f1081e; box-shadow:0px 0px 9px #fdb7bd; }
+div.hcon-widget div.hcon-widget-body {  min-height: 70px; background: #fafafa; position: relative; }
+
+div.hcon-widget.main-menu div.hcon-widget-body { min-height: 90px; }
+div.hcon-widget.home-media div.hcon-widget-body { min-height:250px; }
+
+div.hcon-widget div.hcon-widget-body a.pin{ color:#ddd; position: absolute; top:-15px; left:52%; font-size: 28px; width: 16px; height: 15px;  }
+div.hcon-widget div.hcon-widget-body a.eye{ color:#ddd; position: absolute; top:-15px; left:44%; font-size: 28px; width: 16px; height: 15px;  }
+
+div.hcon-widget div.hcon-widget-body a.eye:hover ,div.hcon-widget div.hcon-widget-body a.pin:hover { color:#aaa; }
+
+div.hcon-widget div.hcon-widget-body a.pin.active { color:#4f545b; }
+div.hcon-widget div.hcon-widget-body a.eye.active { color:#4f545b; }
+
+div.hcon-widget div.one_third { width: 33.33%; float: left; min-height: 40px; position: relative;	 }
+div.hcon-widget div.full-area  { width: 100%; clear: both;  min-height: 40px; position: relative; }
+
+div.hcon-widget div.one_third  > div.visual-ui , div.hcon-widget div.full-area  > div.visual-ui { 
+	position: absolute; z-index: 1; top: 0; left: 0; width: 100%; min-height: 40px;
+	background:#fafafa;  
+	text-align: center; color: #2a2d33; font-weight: 700; padding-top: 10px; opacity:0; font-size: 9px; }
+
+div.hcon-widget div.container { position: relative; z-index: 2; top: 0; left: 0; width: 100%; min-height:80px; }	
+
+div.hcon-block { font-family:"Open Sans"; width: 100%; height: 10px; position: relative; background:#f3f3f3; padding: 10px 0px 20px 0px; text-align: center; font-weight: 700;color: #2a2d33; text-transform: uppercase; font-size: 10px; }	
+div.hcon-block a { position: absolute; top:5px; right:5px; font-size:24px; height:20px; width: 20px; display: block; }
+
+div.social-links > div { display: none; }
+
+
+div.ioahead-delete-message { max-width:400px; margin:10px auto; text-align: center; background:#eee; padding: 20px; display: none; }
+div.ioahead-delete-message p { margin-top: 0; }
+div.ioahead-delete-message > a.button-save { margin-bottom: 0; }
+

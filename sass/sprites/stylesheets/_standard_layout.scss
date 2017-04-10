@@ -1,0 +1,87 @@
+
+@import "layout_variables";
+
+$max_width : 100%;
+$max_width_content : 1060px;
+.layout_element { float: left; min-height: 1px;  }
+
+.full_width { width: #{$max_width}; }
+.one_half ,  .one_half_last { width: #{$max_width/2} ;  }
+
+.one_third  { width: #{$max_width/3};  }
+.one_third_last  { width: #{$max_width/3};  }
+
+.one_fourth { width: #{$max_width/4};  }
+.one_fourth_last { width: #{$max_width/4};  }
+
+.two_third { width: #{$max_width * (2/3) };  }
+.two_third_last  { width: #{$max_width * (2/3) };  }
+
+.three_fourth  { width: #{$max_width* (3/4) };  }
+.three_fourth_last { width: #{$max_width * (3/4) };  }
+
+.one_fifth { width: #{$max_width/5};  }
+.one_fifth_last  { width: #{$max_width/5};  }
+
+.four_fifth  { width: #{$max_width * (4/5) };  }
+.four_fifth_last { width: #{$max_width * (4/5) };  }
+
+/**
+ * Content Columns
+ */
+
+
+.col { float: left;   }
+.col.full { float: none; margin-right: 0; clear:both; width: 100%; }
+
+
+.page-content .col.one_half   { width:510px;  }
+.page-content .col.one_third  { width:326px;  }
+.page-content .col.one_fourth { width:235px;  }
+.page-content .col.two_third   { width:694px;  }
+.page-content .col.three_fourth   { width:785px;  }
+.page-content .col.one_fifth  { width:180px;  }
+.page-content .col.four_fifth  { width:840px;  }
+.sidebar-layout .col , .page-content .col {  margin-right:40px; margin-bottom:20px;  }
+.sidebar-layout .col.full , .page-content .col.full { float: none; margin-right: 0; }
+
+ .sidebar-layout .col.one_half   { width:350px;  }
+ .sidebar-layout .col.one_third  { width:220px;  }
+ .sidebar-layout .col.one_fourth  { width:155px;  }
+.sidebar-layout .col.two_third { width:480px;  }
+ .sidebar-layout .col.three_fourth  { width:545px;  }
+ .sidebar-layout .col.one_fifth  { width:116px;  }
+ .sidebar-layout .col.four_fifth { width:584px;  }
+
+.last { padding-right:0!important; clear:right; margin-right:0!important;}
+.first { padding-left:0!important; clear:left; margin-left:0!important;}
+
+/**
+ * Nested Layouts
+ */
+.col p:last-child { margin-bottom: 0; }
+
+.col .col.one_half  { width:48%;  }
+.col .col.one_third  { width:32%;  }
+.col .col.one_fourth { width:23.5%;  }
+.col .col.two_third { width:64%;  }
+.col .col.three_fourth  { width:73%;  }
+.col .col.one_fifth { width:18%;  }
+.col .col.four_fifth  { width:78%;  }
+.col .col {  margin-right:2%; margin-bottom:15px;  }
+.col .col.full { float: none; margin-right: 0; }
+
+div.page-content .col:last-child { margin-bottom: 0; }
+
+.sidebar {  }
+.below-title.sidebar { margin-top: 0; }
+.below-title.sidebar { margin-top: 0; }
+ .has-left-sidebar  .skeleton  ,  .has-sticky-left-sidebar .skeleton , .has-right-sidebar  .skeleton  ,  .has-sticky-right-sidebar .skeleton { width:750px; }
+/* == Right Sidebar ========================== */
+
+ .has-left-sidebar ,  .has-sticky-left-sidebar { float:right; width:740px; padding-left:30px;  }
+ .left-sidebar.sidebar , .sticky-left-sidebar.sidebar { float:left; width:270px; padding:10px 20px 0 0px;  padding-bottom:0px; margin-bottom:0; }
+/* == Left Sidebar ========================== */
+
+ .has-right-sidebar,  .has-sticky-right-sidebar { float:left; width:740px; padding-right:30px;  }
+ .right-sidebar.sidebar  , .sticky-right-sidebar.sidebar { float:right; width:270px; padding:10px 0 0 20px;  padding-bottom:0px;  margin-bottom:0; }

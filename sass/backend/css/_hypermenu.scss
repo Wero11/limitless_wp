@@ -1,0 +1,36 @@
+/* =============================================================== */
+/* == Backgend Mega Menu Styling ================================= */
+/* =============================================================== */
+
+.h-megamenu .admin-button { margin:4px 0px 6px 0px; padding:4px 8px; }
+.h-megamenu p label { float:left; width:120px; }
+.h-megamenu p input[type=checkbox] { float:left; }
+
+.ioa_megamenu_box  input[type=checkbox] { margin:10px; float:left; clear:right; }
+.ioa_megamenu_box   select { float:left; margin-top:7px; margin-left:10px; }
+.ioa_megamenu_box   select  { }
+.ioa_megamenu_box label { float:left; margin-top:8px; }
+
+.ioa_megamenu_box textarea { display:none; clear:both; }
+
+.item-type-h-column , .item-type-h-widget , .item-type-hmenu , .ioa_megamenu_row_box { display:none; } 
+.hmenu_info { font-size:10px; font-style:inherit; color:#333333; display:block; margin:2px; background:#eee; }
+
+
+textarea.hyper-menu-top-text-holder , textarea.textbox { display: block; width: 100%; height:100px; }
+
+p.menu-colorpicker { position: relative; ; }
+p.menu-colorpicker a.picker-delete { top:20px;  left:87px; }
+p.menu-colorpicker input[type=text] { float: left; clear:none; width:70px;  margin-top: 3px;}
+p.menu-colorpicker .minicolors-swatch {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	text-align: left;
+	float: left;
+	margin: 4px 10px 0 0;
+	vertical-align: middle;
+	display: inline-block;
+}
+.icon-field { width: 70px; }
+.menu-icon-area { position: relative; z-index: 10; }

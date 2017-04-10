@@ -1,0 +1,153 @@
+@import "values";
+@import "mixins";
+/* == RESET ======================= */
+
+@import "reset";
+
+/* == WP CORE Support ================ */
+
+@import "wp_base";
+
+@import "lightbox";
+
+@import "animate";
+
+
+.relative  { position: relative; }
+blockquote { font-family:Georgia,Arial; font-style: italic; }
+pre { padding: 10px; border:1px solid #f4f4f4; }
+
+table { width: 100%; }
+table th { background:$palette_color_2; color:#fff; font-weight: 100; padding:10px 20px; text-align: left; }
+table tr td {  padding:10px 20px; text-align: left; }
+table tr:nth-child(2n+1) { background:#fafafe; }
+
+input[type="text"], input[type="password"], input[type="email"], textarea, select { 
+    outline: none;
+} 
+
+iframe { border:none; outline:none; }
+/**
+ * Custom Scroll Bar stylings
+ */
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 3px;
+	right: 0;
+	width: 8px;
+	height: 100%;
+	background: #fff;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspVerticalBar *,
+.jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #f5f5f5;
+	position: relative;
+	padding:1px;
+}
+
+.jspDrag
+{
+	background: #999999;
+	position: relative;
+	top: 0px; bottom:3px;
+	left: 0px; margin:1px!important;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+
+form {  }
+form input[type=password] , form input[type=text] , form input[type=email] {  padding:12px 10px; border:1px solid #f4f4f4; width: 94%; color:#444; }
+form textarea {  padding:12px 10px; border:1px solid #f4f4f4; width: 94%; color:#444; overflow:auto; }
+form input[type=submit] { @include default_button(12px 24px 12px 24px,12px); outline:none; border:none; } 
+form input[type=submit]:hover { @include default_button_hover(12px 24px 12px 24px,12px); }

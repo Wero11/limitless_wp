@@ -1,0 +1,134 @@
+@import "sprites/stylesheets/values";
+/*
+Theme Name: 	#{$themename}
+Theme URI: 		http://artillegence.com/products?item=#{$themename}
+Author: 		Artillegence
+Author URI: http://artillegence.com/
+Description: 	#{$description}
+Version: 		#{$version}
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: ioa
+*/
+
+
+
+/*
+===== INDEX ============================================================
+
+1.  Icon Fonts Inclusion
+2.  Header Constructor Code
+3.  Page Stylings [Titles,Featured Image,Layout]
+4.  Single Post Stylings [Titles,Featured Image,Layout,Comments]
+5.  Basic Post List Stylings
+6.  RAD Components Stylings
+7.  Gallery Stylings
+8.  Slider Stylings
+9.  Scrollable Stylings
+10. Blog Templates Stylings
+11. Portfolio Templates Stylings
+12. Single Portfolio Stylings
+13. Pricing Tables Stylings
+14. Footer Stylings
+15. Shortcodes Stylings
+16. Styles When Live Editing is Activated
+
+========================================================================== */
+
+ @import url("sprites/fonts/font-awesome.css");
+@import "sprites/stylesheets/mixins";
+@import "sprites/stylesheets/typography";
+
+
+/**
+ * ## Header Constructor Code ## ====================================
+ */
+
+@import "sprites/stylesheets/header_template";
+
+/**
+ * ## Page Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/pages";
+
+/**
+ * ## Single Post Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/post";
+
+/**
+ * ## Basic Post List Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/posts";
+
+/**
+ * ## RAD Components Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/rad_templates";
+
+/**
+ * ## Gallery Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/gallery";
+
+/**
+ * ## Slider Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/slider";
+
+/**
+ * ## Scrollable Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/scrollable";
+
+/**
+ * ## Blog Templates Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/blog_template";
+
+/**
+ * ## Portfolio Templates Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/portfolio_templates";
+
+/**
+ * ## Single Portfolio Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/single_portfolio";
+
+/**
+ * ## Pricing Tables Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/pricing_table";
+
+/**
+ * ## Footer Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/footer";
+
+/**
+ * ## Shortcodes Stylings ## ==============================================
+ */
+
+@import "sprites/stylesheets/shortcodes";
+
+
+
+
+
+div.supper-title-wrapper {  overflow: hidden; }
+
+/* ### END OF SECTION ### */

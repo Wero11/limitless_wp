@@ -1,0 +1,53 @@
+@import "values";
+@import "mixins";
+
+
+div.portfolio div.meta-info  { padding:10px 0; box-shadow:0px 0px 3px rgba(0,0,0,0.07); ; margin:15px 0px 10px 15px; width: 180px; float: right; }
+div.portfolio div.meta-info > div { text-align:left ; padding:7px 20px ; }
+
+div.portfolio div.side-featured-media  div.meta-info { width:auto; float: none; margin-left: 0; }
+
+div.portfolio-navigation { margin-top:0px; border-top:1px solid #f4f4f4; border-bottom:1px solid #f4f4f4; padding:8px 0;  }
+div.portfolio-navigation a { text-decoration: none; color:#666; }
+div.portfolio-navigation a:hover { text-decoration: underline; }
+div.portfolio-navigation span.next { float: right; text-decoration: none; font-size: 11px;  } 
+div.portfolio-navigation span.previous { float: left; text-decoration: none; font-size: 11px;  } 
+
+/**
+ * Full Screen Templates
+ */
+div.single-prop-screen-view-pane  { margin-top:15px; position: relative; min-height:500px; background:url(sprites/i/loader.gif) center center no-repeat; }
+div.single-full-screen-view-pane  { margin-top: 0; position: relative; min-height:500px; background:url(sprites/i/loader.gif) center center no-repeat; }
+div.single-full-screen-view-pane span.loader { background:url(sprites/i/loader.gif) center center no-repeat #fff; border-radius:100%; border:1px solid #eee; box-shadow:0px 0px 10px #eeeeee; width:40px; height:40px; display: block; position: absolute; top:49%; left:49%; }
+.spfs-gallery  div.gallery-item img {  width: 100%; }
+
+div.single-full-screen-view-pane div.gallery-desc { position: absolute; height:0; top:45%; }
+div.single-full-screen-view-pane div.gallery-desc h4  { background:#fff; opacity:0.9; position: relative; padding:4px 15px; margin:0px 0px 10px 10px; }
+div.single-full-screen-view-pane div.gallery-desc h4 , div.single-full-screen-view-pane div.gallery-desc h4 a { text-decoration: none; color:inherit; }
+div.single-full-screen-view-pane div.gallery-desc div.caption { background:#fff; opacity:0.9;  margin-left: 10px; position: relative; margin-top: 0;  padding:15px; position: absolute; max-width:30%; color:inherit; }
+div.single-full-screen-view-pane div.gallery-desc div.caption p { margin-bottom: 0; }
+div.single-full-screen-view-pane div.gallery-desc div.caption a { @include default_button(6px 14px 6px 14px,12px); margin-top: 20px; }
+
+div.single-prop-screen-view-pane div.gallery-desc { position: absolute; height:0; top:45%; }
+div.single-prop-screen-view-pane div.gallery-desc h4  { background:rgba(0,0,0,0.9); position: relative; color:#fff; padding:4px 15px; margin:0px 0px 10px 10px; }
+div.single-prop-screen-view-pane div.gallery-desc h4 , div.single-prop-screen-view-pane div.gallery-desc h4 a { text-decoration: none; color:#fff; }
+div.single-prop-screen-view-pane div.gallery-desc div.caption { background:rgba(0,0,0,0.9); color:#fff; margin-left: 10px; position: relative; margin-top: 0;  padding:15px; position: absolute; max-width:30%; }
+div.single-prop-screen-view-pane div.gallery-desc div.caption p { margin-bottom: 0; }
+div.single-prop-screen-view-pane div.gallery-desc div.caption a { @include default_button(6px 14px 6px 14px,12px); margin-top: 20px; }
+
+div.portfolio_related_posts { margin-bottom: 30px; }
+div.portfolio_related_posts.related_posts  div.related_posts-title-area  { margin-bottom: 10px; } 
+/**
+ * Modelie
+ */
+
+div.single-portfolio-modelie { overflow:hidden; }
+
+/**
+ * Side
+ */
+div.side-single-portfolio-content { width:500px; margin-left: 30px; }
+ul.single-related-posts { visibility:visible; }
+
+div.related_posts-title-area { margin-bottom: 5px; }
+div.related_posts-title-area h3 { font-size: 15px; margin-bottom: 5px; }

@@ -1,0 +1,36 @@
+/**
+ * Core Inputs styling
+ */
+
+/**
+ * Admin Structure
+ */
+
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; *zoom:1;}
+.clearfix { display: block; }
+
+.relative { position: relative; }
+
+.ioa-upload-field input[type=text] { width:150px; float: left; clear: none;  margin-left:10px; }
+.ioa-upload-field a { float: left;clear: none; }
+@import url("../../sprites/fonts/entypo.css");
+
+@import "core_inputs";
+
+@import "structure";
+
+@import "options_panel";
+
+@import "header_constructor";
+
+@import "media_manager";
+
+@import "customposts_manager";
+
+@import "hypermenu";
+
+@import "custom_ioa_panel";
+
+@import "shortcodes";

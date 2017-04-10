@@ -1,0 +1,27 @@
+/**
+ * Contains layout related settings for framework
+ * 1.0
+ */
+
+@import "layout_variables";
+
+.left { float: left; }
+.right { float: right; }
+// Master containers
+.auto_align { margin:0 auto; }
+
+div.super_wrapper { position: relative; }  
+
+.faux_skeleton { width:#{$container_full}px; }
+.skeleton {
+	 width:#{$container_or}px; 
+	 position: relative;
+	 z-index: 1;
+}
+
+@import "standard_layout";
+@import "flexi_layout";
+
+div.super-wrapper {  }
+div.inner-super-wrapper  { background:#fff; }
+div.ioa-boxed-layout { width: 1140px; margin: 0 auto; box-shadow:0px 0px 30px rgba(0,0,0,0.1); position: relative; }

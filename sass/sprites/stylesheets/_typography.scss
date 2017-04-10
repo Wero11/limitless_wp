@@ -1,0 +1,19 @@
+
+/**
+ * Typography
+ */
+
+@import "values";
+
+h1 { margin: 0px 0px 15px 0px; padding: 0; font-size:$h1; color:$title_color; }
+h2 { margin: 0px 0px 15px 0px; padding: 0; font-size:$h2; color:$title_color; }
+h3 { margin: 0px 0px 15px 0px; padding: 0; font-size:$h3; color:$title_color; }
+h4 { margin: 0px 0px 15px 0px; padding: 0; font-size:$h4; color:$title_color; }
+h5 { margin: 0px 0px 15px 0px; padding: 0; font-size:$h4; color:$title_color; }
+h6 { margin: 0px 0px 15px 0px; padding: 0; font-size:$h6; color:$title_color; }
+
+.page-wrapper  a { text-decoration:underline; color:$link_color; 	 }
+
+body { background : $background_color;  -webkit-font-smoothing: antialiased;  font-size:13px; line-height:1.9; color: $color; font-family:"Open Sans","Helvetica","Arial"; }
+body * { -webkit-font-smoothing:antialiased !important;text-rendering:optimizelegibility }
+strong { color:inherit;  }

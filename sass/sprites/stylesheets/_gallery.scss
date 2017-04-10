@@ -1,0 +1,48 @@
+@import "values";
+@import "mixins";
+
+.seleneGallery { margin:0px auto 0px auto; position:relative;  padding:0; width:600px; max-width: 100%; visibility:hidden; opacity:0;  }
+
+.seleneGallery div.gallery-holder { position: relative;  border:none; width:100%; height:450px;  overflow:hidden;  z-index:2;  }
+.seleneGallery div.gallery-item {  position:absolute; top:0; left:0; border:none;  margin:0; padding:0; display:block; width:100%; height:100%; z-index:1; }
+.seleneGallery div.gallery-item>a {  margin:0; padding:0; outline:none; border:none; text-decoration:none; display:block; width:100%; height:100%; }
+.seleneGallery div.gallery-item img { margin:0 auto; padding:0; display:block; max-width:100%; min-height:100%; height:auto;  position:relative; z-index:1; }
+.seleneGallery div.gallery-item video ,
+.seleneGallery div.gallery-item iframe,
+.seleneGallery div.gallery-item object,
+.seleneGallery div.gallery-item embed {position: absolute;top: 0;left: 0; border:none; outline:none; }
+
+.seleneGallery div.gallery-item.hidden { z-index:2; display: none;  }
+.seleneGallery div.gallery-item.active { z-index:7;  }
+.seleneGallery div.gallery-item.reset { z-index:5; }
+
+div.gallery-desc h4 { margin-top: 0;  top:0px; display: inline-block; background:#fff;font-weight: 400; font-size: 17px; line-height: 1.6;    padding: 2px 5px; position: absolute; }
+div.gallery-desc div.caption { margin-top: 0;  top:40px;  background:#fff; padding:3px 3px; position: absolute; max-width: 50%; }
+div.gallery-desc { position: absolute; top:45%; left:15px; width: 100%; height: 100%; z-index: 40;  font-size: 12px; display: none; }
+
+.full-stretch ul.selene-thumbnails li img { min-height:100%; }
+
+.seleneGallery .selene-thumbnails-wrap { height:85px; position: relative; overflow:hidden; margin-top:5px;  }
+.seleneGallery ul.selene-thumbnails {  width:2000em; margin:0 0 ; padding:0 0; height:85px; position: absolute; top:0; left:0px; z-index:4;  }
+.seleneGallery ul.selene-thumbnails.push_right { margin-left: 20px; }
+.seleneGallery ul.selene-thumbnails li { overflow :hidden;  cursor:pointer; float: left; border:1px solid rgba(0,0,0,0.06); padding:4px; list-style:none; position: relative; width:75px; height:75px;  }
+.seleneGallery ul.selene-thumbnails li img { opacity:0.5; }
+.seleneGallery ul.selene-thumbnails li:first-child { margin-left: 0; }
+.seleneGallery ul.selene-thumbnails li span.gallery-loader { z-index: 3; width:0px; display: block; background:  #ffffff; opacity:0.7; position: absolute; top:0; left:0;  height:100%; }
+.seleneGallery ul.selene-thumbnails li.active span.gallery-loader {    }
+.seleneGallery ul.selene-thumbnails li.active img { opacity:1; position: relative; }
+.seleneGallery ul.selene-thumbnails li img { margin:0 auto; padding:0; display:block; width:100%; height:100%; position:relative;  z-index: 2; }
+
+.seleneGallery ul.selene-bullet-mode { padding:0; margin:9px 0 0 0; position: relative; }
+.seleneGallery ul.selene-bullet-mode li { cursor:pointer; position: relative; margin:0px 5px; float: left; list-style:none; width:7px; height:7px; border:2px solid #fff; border-radius:100%; }
+.seleneGallery ul.selene-bullet-mode li.active  { background:#fff;  }
+
+div.selene-controls-wrap {  position:absolute;  bottom:0px; left:0px;  z-index: 99; }
+.seleneGallery div.selene-controls-wrap  a { opacity:0.95; float: left;  background: #fff; text-decoration: none; text-align: center; color:#555555; font-size: 14px; width: 40px; padding:20px 0 20px 0; line-height:0px; display: block; z-index: 100; }
+div.selene-controls-wrap  a:hover { opacity: 1; }
+div.selene-controls-wrap a.gallery-pause {font-size: 9px; }
+a.gallery-prev { }
+a.gallery-next { bottom:0px; right:0px; }
+
+.seleneGallery a.thumb-arrow-left { bottom:25px;  left:0; text-decoration: none; background: #111; opacity:0.7; text-align: center; color:#ffffff; font-size: 18px; width:20px; padding:20px 0 20px 0; line-height:0px; display: block; z-index: 100; position:absolute; }
+.seleneGallery a.thumb-arrow-right { bottom:25px;   right:0; text-decoration: none; background: #111; opacity:0.7; text-align: center; color:#ffffff; font-size: 18px; width:20px; padding:20px 0 20px 0; line-height:0px; display: block; z-index: 100; position:absolute; }
